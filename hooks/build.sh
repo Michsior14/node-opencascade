@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TAG="${OCCT_VERSION}-node${NODE_VERSION}"
-BUILD_TAG="michaukrieg/node-opencascade${TAG}"
+BUILD_TAG="michaukrieg/node-opencascade:${TAG}"
 
 set -x
 docker build . \
