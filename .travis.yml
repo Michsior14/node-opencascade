@@ -7,8 +7,10 @@ env:
   - NODE_VERSION="11" OCCT_VERSION="V7_3_0p3"
   - NODE_VERSION="12" OCCT_VERSION="V7_3_0p3"
 
-script:
-  - "./hooks/build.sh"
+script: bash ./scripts/build.sh
 
-after_script:
-  - docker images
+deploy:
+  provider: script  
+  script: bash ./scripts/push.sh
+  on:
+    branch: master
