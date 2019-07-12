@@ -1,7 +1,6 @@
 #!/bin/bash
 
-TAG="${OCCT_VERSION}-node${NODE_VERSION}"
-BUILD_TAG="michaukrieg/node-opencascade:${TAG}"
+BUILD_TAG="michaukrieg/node-opencascade:${OCCT_VERSION}-node${NODE_VERSION}"
 
 set -x
 docker build . \
@@ -10,6 +9,4 @@ docker build . \
     --build-arg node_version=$NODE_VERSION \
     --build-arg occt_version=$OCCT_VERSION
 
-image_id=$(docker images $BUILD_TAG --format "{{.ID}}")
-docker tag $image_id "michaukrieg/node-opencascade:${TAG}"
-docker run --rm --entrypoint echo "$TAG" "Hello world!"
+docker run --rm --entrypoint echo "$BUILD_TAG" "Hello world!"
