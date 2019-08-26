@@ -2,6 +2,7 @@ ARG node_version=8
 ARG occt_version=V7_3_0p3
 
 FROM "node:$node_version"
+ARG occt_version
 
 RUN apt-get update \
   && DEBIAN_FRONTEND=noninteractive apt-get -y install \
@@ -16,9 +17,8 @@ RUN apt-get update \
   libxi-dev \
   && rm -rf /var/lib/apt/lists/* \
   && cd / \
-  && git clone https://git.dev.opencascade.org/repos/occt.git \
+  && git clone --depth=50 --branch=$occt_version https://git.dev.opencascade.org/repos/occt.git \
   && cd /occt \
-  && git checkout -b $occt_version \
   && mkdir build \
   && cd build \
   && cmake .. \
