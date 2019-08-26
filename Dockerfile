@@ -18,7 +18,7 @@ RUN apt-get update \
   && cd / \
   && git clone https://git.dev.opencascade.org/repos/occt.git \
   && cd /occt \
-  && git checkout -b docker $occt_version \
+  && git checkout -b $occt_version \
   && mkdir build \
   && cd build \
   && cmake .. \
