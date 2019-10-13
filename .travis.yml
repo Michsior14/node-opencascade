@@ -2,10 +2,10 @@ language: bash
 services: docker
 
 env:
-  - NODE_VERSION="8" OCCT_VERSION="V7_3_0p3"
-  - NODE_VERSION="10" OCCT_VERSION="V7_3_0p3"
-  - NODE_VERSION="11" OCCT_VERSION="V7_3_0p3"
-  - NODE_VERSION="12" OCCT_VERSION="V7_3_0p3"
+  - NODE_VERSION="8" OCCT_VERSION="v7_4_0"
+  - NODE_VERSION="10" OCCT_VERSION="v7_4_0"
+  - NODE_VERSION="11" OCCT_VERSION="v7_4_0"
+  - NODE_VERSION="12" OCCT_VERSION="v7_4_0"
 
 script: bash ./scripts/build.sh
 
