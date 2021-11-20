@@ -1,13 +1,16 @@
 # node-opencascade
 
-[![Build Status](https://travis-ci.com/Michsior14/node-opencascade.svg?branch=master)](https://travis-ci.com/Michsior14/node-opencascade)
+![Build Status](https://github.com/Michsior14/node-opencascade/actions/workflows/build-and-publish.yml/badge.svg)
 
 _Unofficial_ docker image for [opencascade](https://git.dev.opencascade.org/gitweb/?p=occt.git) and node.
 
 ## Supported tags
 
-Images for `opencascade` are based of node (8,10,11,12) base images. Available tags:
+Images for `opencascade` are based of node (12,14,16) base images. Available tags:
 
+- V7_6_0-node12, node-12
+- V7_6_0-node14, node-14
+- V7_6_0-node16, node-16
 - V7_4_0-node8
 - V7_4_0-node10
 - V7_4_0-node11

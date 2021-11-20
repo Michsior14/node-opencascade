@@ -1,5 +1,5 @@
-ARG node_version=8
-ARG occt_version=V7_3_0p3
+ARG node_version=16
+ARG occt_version=V7_6_0
 
 FROM "node:$node_version"
 ARG occt_version
