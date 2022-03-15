@@ -8,6 +8,9 @@ _Unofficial_ docker image for [opencascade](https://git.dev.opencascade.org/gitw
 
 Images for `opencascade` are based of node (12,14,16) base images. Available tags:
 
+- V7_6_1-node12, node-12
+- V7_6_1-node14, node-14
+- V7_6_1-node16, node-16
 - V7_6_0-node12, node-12
 - V7_6_0-node14, node-14
 - V7_6_0-node16, node-16

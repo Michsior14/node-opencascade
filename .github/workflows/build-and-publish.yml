@@ -8,7 +8,7 @@ on:
 
 env:
   IMAGE_NAME: node-opencascade
-  OCCT_VERSION: V7_6_0
+  OCCT_VERSION: V7_6_1
 
 jobs:
   build:
