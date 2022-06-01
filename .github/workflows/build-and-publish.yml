@@ -8,7 +8,7 @@ on:
 
 env:
   IMAGE_NAME: node-opencascade
-  OCCT_VERSION: V7_6_1
+  OCCT_VERSION: V7_6_2
 
 jobs:
   build:
@@ -19,7 +19,7 @@ jobs:
 
     strategy:
       matrix:
-        node: [12, 14, 16]
+        node: [14, 16]
 
     steps:
       - name: Checkout repository
